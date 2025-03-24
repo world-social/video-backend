@@ -6,7 +6,7 @@ const customFormat = printf(({ level, message, timestamp }) => {
 });
 
 const logger = createLogger({
-  level: process.env.LOG_LEVEL || 'debug', // adjust level as needed
+  level: 'debug', // adjust level as needed
   format: combine(
     colorize(),
     timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
